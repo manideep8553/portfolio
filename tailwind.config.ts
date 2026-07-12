@@ -19,9 +19,9 @@ const config: Config = {
           light: "#38BDF8",
         },
         bg: {
-          darkest: "#050816",
-          darker: "#0B1120",
-          dark: "#111827",
+          darkest: "#EBF4FF",
+          darker: "#DBEAFE",
+          dark: "#BFDBFE",
         },
       },
       fontFamily: {
