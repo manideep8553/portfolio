@@ -187,7 +187,7 @@ export default function Home() {
                 { icon: Github, href: "https://github.com/kalvamanideep", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com/in/kalvamanideep", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:kalvamanideep@gmail.com", label: "Email" },
-                { icon: Code2, href: "https://leetcode.com/kalvamanideep", label: "LeetCode" },
+                { icon: Code2, href: "https://leetcode.com/u/Manideep_06/", label: "LeetCode" },
               ].map((social, i) => (
                 <motion.a
                   key={social.label}
