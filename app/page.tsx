@@ -444,23 +444,25 @@ export default function Home() {
                     <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
                       <project.icon size={24} className="sm:w-8 sm:h-8" style={{ color: project.color }} />
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 sm:gap-3">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                        className="px-3 sm:px-4 h-9 sm:h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center gap-1.5 sm:gap-2 hover:bg-white/20 transition-all hover:scale-105"
                       >
-                        <Github size={16} className="sm:w-5 sm:h-5 text-white" />
+                        <Github size={14} className="sm:w-4 sm:h-4 text-white" />
+                        <span className="text-[11px] sm:text-xs text-white font-medium">GitHub</span>
                       </a>
                       {project.live !== "#" && (
                         <a
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                          className="px-3 sm:px-4 h-9 sm:h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center gap-1.5 sm:gap-2 hover:bg-white/20 transition-all hover:scale-105"
                         >
-                          <ExternalLink size={16} className="sm:w-5 sm:h-5 text-white" />
+                          <ExternalLink size={14} className="sm:w-4 sm:h-4 text-white" />
+                          <span className="text-[11px] sm:text-xs text-white font-medium">Live Demo</span>
                         </a>
                       )}
                     </div>
