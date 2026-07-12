@@ -17,7 +17,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background: #EBF4FF;
-  color: #1E293B;
+  color: #0F172A;
   overflow-x: hidden;
 }
 
@@ -101,35 +101,36 @@ body {
 }
 
 .hero-gradient {
+  pointer-events: none;
   background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.1), transparent);
 }
 
 main .text-white:where(:not(.gradient-text):not(a):not(button)) {
-  color: #1E293B;
+  color: #0F172A;
 }
 
 main .text-gray-200 {
-  color: #334155;
-}
-
-main .text-gray-300 {
-  color: #475569;
-}
-
-main .text-gray-400:where(:not(a):not(button)) {
-  color: #64748B;
-}
-
-main .text-gray-500 {
-  color: #94A3B8;
-}
-
-nav .text-white:where(:not(a):not(button)) {
   color: #1E293B;
 }
 
-nav .text-gray-400 {
+main .text-gray-300 {
+  color: #334155;
+}
+
+main .text-gray-400:where(:not(a):not(button)) {
+  color: #475569;
+}
+
+main .text-gray-500 {
   color: #64748B;
+}
+
+nav .text-white:where(:not(a):not(button)) {
+  color: #0F172A;
+}
+
+nav .text-gray-400 {
+  color: #475569;
 }
 
 .section-padding {
