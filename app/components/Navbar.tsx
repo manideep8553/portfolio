@@ -61,7 +61,7 @@ export const Navbar = () => {
             : "bg-transparent"
         )}
       >
-        <div className="container-width flex items-center justify-between h-16 md:h-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
           <button
             onClick={() => handleClick("#home")}
             className="text-2xl font-heading font-bold gradient-text"
