@@ -67,6 +67,9 @@ export default function Home() {
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState("");
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     const currentWord = typingWords[wordIndex];
@@ -167,20 +170,15 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-light to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
 
-              <button
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/Manideep_Resume.pdf";
-                  link.download = "Manideep_Resume.pdf";
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
+              <a
+                href="/Manideep_Resume_finla_1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto justify-center px-6 sm:px-8 py-4 border border-primary/50 text-white rounded-full font-medium text-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
               >
                 <Download size={20} />
                 Resume
-              </button>
+              </a>
             </motion.div>
 
             <motion.div
@@ -730,43 +728,78 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  setSending(true);
+                  try {
+                    const res = await fetch("/api/contact", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(formData),
+                    });
+                    if (res.ok) {
+                      setSent(true);
+                      setFormData({ name: "", email: "", message: "" });
+                    }
+                  } finally {
+                    setSending(false);
+                  }
+                }}
                 className="glass-card rounded-2xl p-6 sm:p-8 space-y-4 sm:space-y-5"
               >
-                <div>
-                  <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Your Name</label>
-                  <input
-                    type="text"
-                    required
-                    className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors text-sm sm:text-base"
-                    placeholder="John Doe"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Your Email</label>
-                  <input
-                    type="email"
-                    required
-                    className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors text-sm sm:text-base"
-                    placeholder="john@example.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Message</label>
-                  <textarea
-                    required
-                    rows={4}
-                    className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors resize-none text-sm sm:text-base"
-                    placeholder="Your message..."
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full py-4 bg-gradient-to-r from-primary to-accent text-white rounded-xl font-semibold text-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
-                >
-                  Send Message
-                  <Send size={20} />
-                </button>
+                {sent ? (
+                  <div className="text-center py-8">
+                    <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4">
+                      <Send size={28} className="text-green-400" />
+                    </div>
+                    <p className="text-green-400 text-lg font-semibold">Message Sent!</p>
+                    <p className="text-gray-400 text-sm mt-1">I&apos;ll get back to you soon.</p>
+                  </div>
+                ) : (
+                  <>
+                    <div>
+                      <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Your Name</label>
+                      <input
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors text-sm sm:text-base"
+                        placeholder="John Doe"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Your Email</label>
+                      <input
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors text-sm sm:text-base"
+                        placeholder="john@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm text-gray-400 mb-1.5 sm:mb-2 font-medium">Message</label>
+                      <textarea
+                        required
+                        rows={4}
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        className="w-full px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 transition-colors resize-none text-sm sm:text-base"
+                        placeholder="Your message..."
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      disabled={sending}
+                      className="w-full py-4 bg-gradient-to-r from-primary to-accent text-white rounded-xl font-semibold text-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity disabled:opacity-50"
+                    >
+                      {sending ? "Sending..." : "Send Message"}
+                      {!sending && <Send size={20} />}
+                    </button>
+                  </>
+                )}
               </form>
             </motion.div>
           </div>

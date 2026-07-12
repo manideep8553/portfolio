@@ -35,7 +35,7 @@ export const resume = {
       "Building intelligent systems at the intersection of AI and full-stack development. Passionate about creating impactful solutions with cutting-edge technology.",
     aboutParagraph:
       "I am a passionate AI Engineer and Full Stack Developer with expertise in building intelligent systems and scalable web applications. Currently pursuing my B.Tech in Computer Science (AI & ML) at the Institute of Aeronautical Engineering.",
-    resumeFile: "/Manideep_Resume.pdf",
+    resumeFile: "/Manideep_Resume_finla_1.pdf",
   },
 
   social: [
