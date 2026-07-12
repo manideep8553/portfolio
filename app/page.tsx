@@ -664,46 +664,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== ACHIEVEMENTS ===== */}
-      <section id="achievements" className="section-padding relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-4">
-              <span className="gradient-text">Achievements</span>
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto" />
-          </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-            {resume.stats.map((item, idx) => (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: idx * 0.08 }}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="glass-card rounded-2xl p-6 text-center"
-              >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mx-auto mb-4">
-                  <item.icon size={26} className="text-primary-light" />
-                </div>
-                <span className="text-3xl md:text-4xl font-heading font-bold gradient-text block">
-                  <Counter value={item.value} suffix={item.suffix} />
-                </span>
-                <span className="text-gray-400 text-sm">{item.label}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== CONTACT ===== */}
       <section id="contact" className="section-padding relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

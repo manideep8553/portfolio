@@ -61,11 +61,11 @@ export const resume = {
   ],
 
   stats: [
-    { icon: Briefcase, value: 10, label: "Projects", suffix: "+" },
+    { icon: Briefcase, value: 8, label: "Projects", suffix: "+" },
     { icon: Award, value: 1, label: "Internships", suffix: "" },
-    { icon: Star, value: 10, label: "Certificates", suffix: "+" },
+    { icon: Star, value: 12, label: "Certificates", suffix: "+" },
     { icon: Code2, value: 250, label: "Coding Problems", suffix: "+" },
-    { icon: Layers, value: 25, label: "Technologies", suffix: "+" },
+    { icon: Layers, value: 20, label: "Technologies", suffix: "+" },
   ],
 
   education: [
