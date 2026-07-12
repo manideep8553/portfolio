@@ -451,14 +451,16 @@ export default function Home() {
                       >
                         <Github size={20} className="text-white" />
                       </a>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
-                      >
-                        <ExternalLink size={20} className="text-white" />
-                      </a>
+                      {project.live !== "#" && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+                        >
+                          <ExternalLink size={20} className="text-white" />
+                        </a>
+                      )}
                     </div>
                   </div>
                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-1">
