@@ -171,8 +171,8 @@ export default function Home() {
               </a>
 
               <a
-                href="/Manideep_Resume_finla_1.pdf"
-                download="Manideep_Resume_finla_1.pdf"
+                href="/Manideep_Resume.pdf"
+                download="Manideep_Kalva_Resume.pdf"
                 className="w-full sm:w-auto justify-center px-6 sm:px-8 py-4 border border-primary/50 text-white rounded-full font-medium text-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
               >
                 <Download size={20} />
