@@ -198,7 +198,7 @@ export const resume = {
       description:
         "A real-time collaborative study platform featuring video conferencing, live chat, screen sharing, collaborative whiteboards, synchronized Pomodoro timers, AI-powered session summarization, and an integrated Monaco Code Editor.",
       github: "https://github.com/manideep8553/virtual-study-room",
-      live: "https://virtual-study-room.vercel.app/",
+      live: "https://virtual-study-room-ten.vercel.app/",
       
       gradient: "from-pink-600/20 via-purple-600/10 to-indigo-600/20",
       date: "March 2026",
