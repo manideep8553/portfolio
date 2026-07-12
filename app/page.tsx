@@ -34,7 +34,7 @@ import { FloatingParticles } from "./components/effects/FloatingParticles";
 
 const typingWords = [
   "AI Engineer",
-  "Spring Boot Developer",
+  "Java Developer",
   "MERN Stack Developer",
   "Machine Learning Enthusiast",
   "Problem Solver",
@@ -167,13 +167,20 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-light to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </a>
 
-              <a
-                href="/api/download-resume"
+              <button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Manideep_Resume.pdf";
+                  link.download = "Manideep_Resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
                 className="w-full sm:w-auto justify-center px-6 sm:px-8 py-4 border border-primary/50 text-white rounded-full font-medium text-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
               >
                 <Download size={20} />
                 Resume
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
