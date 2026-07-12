@@ -1,0 +1,353 @@
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Code2,
+  MapPin,
+  Phone,
+  Briefcase,
+  Award,
+  Star,
+  Layers,
+  GraduationCap,
+  Calendar,
+  Shield,
+  Workflow,
+  Video,
+  Brain,
+  Trophy,
+  ExternalLink,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+export const resume = {
+  personal: {
+    name: "Kalva Manideep",
+    nameAlt: "Manideep Kalva",
+    headline: "AI Engineer & Full Stack Developer",
+    title: "AI Engineer & Full Stack Developer",
+    email: "kalvamanideep@gmail.com",
+    phone: "+91 9703388336",
+    location: "Hyderabad, India",
+    summary:
+      "Building intelligent systems at the intersection of AI and full-stack development. Passionate about creating impactful solutions with cutting-edge technology.",
+    aboutParagraph:
+      "I am a passionate AI Engineer and Full Stack Developer with expertise in building intelligent systems and scalable web applications. Currently pursuing my B.Tech in Computer Science (AI & ML) at the Institute of Aeronautical Engineering.",
+    resumeFile: "/Manideep_Resume.pdf",
+  },
+
+  social: [
+    { label: "GitHub", url: "https://github.com/kalvamanideep", icon: Github },
+    { label: "LinkedIn", url: "https://linkedin.com/in/kalvamanideep", icon: Linkedin },
+    { label: "Email", url: "mailto:kalvamanideep@gmail.com", icon: Mail },
+    { label: "LeetCode", url: "https://leetcode.com/kalvamanideep", icon: Code2 },
+  ],
+
+  typingWords: [
+    "AI Engineer",
+    "Spring Boot Developer",
+    "MERN Stack Developer",
+    "Machine Learning Enthusiast",
+    "Problem Solver",
+  ],
+
+  quickFacts: [
+    { icon: MapPin, label: "Location", value: "Hyderabad, India" },
+    { icon: GraduationCap, label: "Education", value: "B.Tech CSE (AI & ML)" },
+    { icon: Star, label: "CGPA", value: "8.15" },
+    { icon: Calendar, label: "Graduation", value: "2027" },
+    { icon: Mail, label: "Email", value: "kalvamanideep@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 9703388336" },
+  ],
+
+  stats: [
+    { icon: Briefcase, value: 4, label: "Projects", suffix: "+" },
+    { icon: Award, value: 1, label: "Internships", suffix: "" },
+    { icon: Star, value: 6, label: "Certificates", suffix: "" },
+    { icon: Code2, value: 170, label: "Coding Problems", suffix: "+" },
+    { icon: Layers, value: 15, label: "Technologies", suffix: "+" },
+  ],
+
+  education: [
+    {
+      degree: "B.Tech in Computer Science and Engineering (AI & ML)",
+      institution: "Institute of Aeronautical Engineering, Hyderabad",
+      year: "June 2027",
+      score: "CGPA: 8.15/10.0",
+    },
+    {
+      degree: "Intermediate (MPC)",
+      institution: "Sri Chaitanya Junior Kalasala, Hyderabad",
+      year: "April 2023",
+      score: "Percentage: 94.7%",
+    },
+    {
+      degree: "SSC",
+      institution: "Bhashyam High School, Hyderabad",
+      year: "May 2021",
+      score: "GPA: 10.0/10.0",
+    },
+  ],
+
+  skills: {
+    Languages: [
+      { name: "Java", level: 90 },
+      { name: "Python", level: 80 },
+      { name: "SQL", level: 85 },
+      { name: "JavaScript", level: 85 },
+    ],
+    "Web Technologies": [
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 90 },
+      { name: "React", level: 85 },
+      { name: "Node.js", level: 82 },
+      { name: "Express.js", level: 78 },
+    ],
+    "Tools & DevOps": [
+      { name: "Git", level: 90 },
+      { name: "GitHub", level: 90 },
+      { name: "VS Code", level: 92 },
+      { name: "Docker", level: 75 },
+    ],
+    "AI & Databases": [
+      { name: "Machine Learning", level: 75 },
+      { name: "Spring AI", level: 78 },
+      { name: "MongoDB", level: 82 },
+      { name: "Redis", level: 70 },
+    ],
+  },
+
+  skillCategories: [
+    {
+      title: "Languages",
+      icon: "⚡",
+      skills: [
+        { name: "Java", level: 90 },
+        { name: "Python", level: 80 },
+        { name: "SQL", level: 85 },
+        { name: "JavaScript", level: 85 },
+      ],
+    },
+    {
+      title: "Frontend",
+      icon: "🎨",
+      skills: [
+        { name: "React", level: 85 },
+        { name: "HTML", level: 95 },
+        { name: "CSS", level: 90 },
+        { name: "Node.js", level: 82 },
+        { name: "Express.js", level: 78 },
+      ],
+    },
+    {
+      title: "Backend & APIs",
+      icon: "⚙️",
+      skills: [
+        { name: "Spring Boot", level: 88 },
+        { name: "REST APIs", level: 85 },
+        { name: "WebSockets", level: 75 },
+      ],
+    },
+    {
+      title: "AI & ML",
+      icon: "🤖",
+      skills: [
+        { name: "Machine Learning", level: 75 },
+        { name: "Spring AI", level: 78 },
+        { name: "OpenAI APIs", level: 72 },
+      ],
+    },
+    {
+      title: "Database",
+      icon: "💾",
+      skills: [
+        { name: "MongoDB", level: 82 },
+        { name: "MySQL", level: 85 },
+        { name: "Redis", level: 70 },
+        { name: "Elasticsearch", level: 65 },
+      ],
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: "☁️",
+      skills: [
+        { name: "AWS", level: 72 },
+        { name: "Docker", level: 75 },
+        { name: "Git", level: 90 },
+        { name: "GitHub", level: 90 },
+      ],
+    },
+  ],
+
+  projects: [
+    {
+      title: "GuardianAI Pro",
+      subtitle: "AI-Powered Personal Safety & Emergency Response Platform",
+      icon: Shield,
+      color: "#7C3AED",
+      tech: ["React", "Spring Boot", "MongoDB", "Spring AI", "WebSockets", "Google Maps APIs"],
+      features: [
+        "Real-time incident detection",
+        "Live location tracking",
+        "SOS alerts",
+        "Multimodal AI analysis",
+        "Predictive risk assessment",
+        "Emergency contact notifications",
+        "Interactive monitoring dashboards",
+      ],
+      description:
+        "An AI-powered personal safety and emergency response platform featuring real-time incident detection, live location tracking, SOS alerts, multimodal AI analysis, predictive risk assessment, emergency contact notifications, and interactive monitoring dashboards.",
+      github: "https://github.com/kalvamanideep/guardianai-pro",
+      live: "#",
+      gradient: "from-purple-600/20 via-violet-600/10 to-cyan-600/20",
+      date: "July 2026",
+    },
+    {
+      title: "AI-Flow Enterprise",
+      subtitle: "Enterprise Workflow Automation Platform",
+      icon: Workflow,
+      color: "#06B6D4",
+      tech: [
+        "Java",
+        "Spring Boot",
+        "React",
+        "MongoDB Atlas",
+        "Spring AI",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Elasticsearch",
+        "AWS S3",
+      ],
+      features: [
+        "Dynamic workflow orchestration",
+        "Role-based access control",
+        "Document intelligence",
+        "Fraud detection",
+        "Real-time analytics",
+        "Notifications",
+        "Intelligent business process automation",
+      ],
+      description:
+        "An AI-powered enterprise workflow automation platform enabling dynamic workflow orchestration, role-based access control, document intelligence, fraud detection, real-time analytics, and intelligent business process automation.",
+      github: "https://github.com/kalvamanideep/ai-flow-enterprise",
+      live: "#",
+      gradient: "from-cyan-600/20 via-blue-600/10 to-purple-600/20",
+      date: "July 2026",
+    },
+    {
+      title: "Virtual Collaborative Study Room",
+      subtitle: "Real-Time Collaborative Learning Platform",
+      icon: Video,
+      color: "#A855F7",
+      tech: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB"],
+      features: [
+        "Video conferencing",
+        "Live chat",
+        "Screen sharing",
+        "Collaborative whiteboard",
+        "Synchronized Pomodoro timers",
+        "AI-powered session summarization",
+        "Monaco Code Editor",
+      ],
+      description:
+        "A real-time collaborative study platform featuring video conferencing, live chat, screen sharing, collaborative whiteboards, synchronized Pomodoro timers, AI-powered session summarization, and an integrated Monaco Code Editor.",
+      github: "https://github.com/kalvamanideep/virtual-study-room",
+      live: "#",
+      gradient: "from-pink-600/20 via-purple-600/10 to-indigo-600/20",
+      date: "March 2026",
+    },
+    {
+      title: "AI Interview & Placement Preparation Coach",
+      subtitle: "AI-Powered Career Preparation Platform",
+      icon: Brain,
+      color: "#38BDF8",
+      tech: ["React", "Node.js", "MongoDB", "OpenAI APIs", "Spring Boot"],
+      features: [
+        "Mock interviews",
+        "Coding assessments",
+        "Resume analysis",
+        "Company-specific preparation",
+        "Skill gap analysis",
+        "Personalized roadmaps",
+        "Placement readiness scoring",
+      ],
+      description:
+        "An AI-powered placement preparation platform providing mock interviews, coding assessments, resume analysis, company-specific preparation, skill gap analysis, personalized roadmaps, and placement readiness scoring.",
+      github: "https://github.com/kalvamanideep/ai-interview-coach",
+      live: "#",
+      gradient: "from-sky-600/20 via-blue-600/10 to-violet-600/20",
+      date: "June 2026",
+    },
+  ],
+
+  experience: [
+    {
+      title: "AI Internship on Web Development",
+      company: "Swecha Summer Internship",
+      location: "Gachibowli, Hyderabad",
+      period: "May – June 2026",
+      description: [
+        "Developed server-side functionality in Node.js to generate dynamic Open Graph (OG) metadata for the Corpus Client Application",
+        "Integrated backend APIs for real-time record retrieval, improving data access efficiency",
+        "Enabled accurate social media link previews for shared content, enhancing cross-platform sharing experience",
+      ],
+    },
+  ],
+
+  certifications: [
+    { title: "The Complete Full-Stack Web Development Bootcamp", issuer: "Udemy", date: "July 2026", color: "#7C3AED" },
+    { title: "Frontend Developer (React)", issuer: "HackerRank", date: "July 2026", color: "#06B6D4" },
+    { title: "Java Programming Course For Beginners", issuer: "ScholarHat", date: "June 2026", color: "#A855F7" },
+    { title: "SQL Server Foundations Course", issuer: "ScholarHat", date: "July 2026", color: "#38BDF8" },
+    { title: "AI and ML Virtual Internship", issuer: "AICTE (AWS Academy)", date: "Apr–May 2025", color: "#8B5CF6" },
+    { title: "Deep Learning Intern", issuer: "MSME", date: "May 2025", color: "#06B6D4" },
+  ],
+
+  codingProfiles: [
+    {
+      platform: "LeetCode",
+      username: "kalvamanideep",
+      problems: 70,
+      label: "70+ Problems",
+      icon: Code2,
+      color: "#FFA116",
+      link: "https://leetcode.com/kalvamanideep",
+      description: "Solved 70+ problems focusing on algorithmic problem solving and coding interview preparation.",
+    },
+    {
+      platform: "CodeChef",
+      username: "kalvamanideep",
+      problems: 100,
+      label: "100+ Problems",
+      rating: 1017,
+      icon: Trophy,
+      color: "#A855F7",
+      link: "https://www.codechef.com/users/kalvamanideep",
+      description:
+        "Solved 100+ competitive programming problems with a rating of 1017.",
+    },
+  ],
+
+  techStackIcons: [
+    { name: "Java", icon: "☕", color: "#ED8B00" },
+    { name: "Spring Boot", icon: "🍃", color: "#6DB33F" },
+    { name: "React", icon: "⚛️", color: "#61DAFB" },
+    { name: "Node.js", icon: "🟢", color: "#339933" },
+    { name: "MongoDB", icon: "🍃", color: "#47A248" },
+    { name: "Docker", icon: "🐳", color: "#2496ED" },
+    { name: "AWS", icon: "☁️", color: "#FF9900" },
+    { name: "Redis", icon: "🔴", color: "#DC382D" },
+    { name: "Kafka", icon: "📨", color: "#231F20" },
+    { name: "Git", icon: "🔀", color: "#F05032" },
+    { name: "Python", icon: "🐍", color: "#3776AB" },
+  ],
+
+  contact: {
+    email: "kalvamanideep@gmail.com",
+    phone: "+91 9703388336",
+    location: "Hyderabad, India",
+    linkedin: "https://linkedin.com/in/kalvamanideep",
+    github: "https://github.com/kalvamanideep",
+  },
+} as const;
