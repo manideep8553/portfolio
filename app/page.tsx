@@ -171,9 +171,9 @@ export default function Home() {
               </a>
 
               <a
-                href="/Manideep_Resume.pdf"
+                href="/Manideep_Resume_finla_1.pdf"
                 download="Manideep_Kalva_Resume.pdf"
-                className="w-full sm:w-auto justify-center px-6 sm:px-8 py-4 border border-primary/50 text-white rounded-full font-medium text-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
+                className="w-full sm:w-auto justify-center px-6 sm:px-8 py-4 border border-primary/50 text-gray-800 rounded-full font-medium text-lg hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2"
               >
                 <Download size={20} />
                 Resume
@@ -201,7 +201,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.2 + i * 0.08 }}
                   whileHover={{ scale: 1.1, y: -3 }}
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-primary-light hover:border-primary/50 transition-all duration-300"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full glass-card flex items-center justify-center text-gray-500 hover:text-primary-light hover:border-primary/50 transition-all duration-300"
                   title={social.label}
                 >
                   <social.icon size={20} className="sm:w-6 sm:h-6" />
