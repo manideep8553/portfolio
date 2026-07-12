@@ -37,15 +37,13 @@ export const resume = {
   },
 
   social: [
-    { label: "GitHub", url: "https://github.com/kalvamanideep", icon: Github },
-    { label: "LinkedIn", url: "https://linkedin.com/in/kalvamanideep", icon: Linkedin },
-    { label: "Email", url: "mailto:kalvamanideep@gmail.com", icon: Mail },
-    { label: "LeetCode", url: "https://leetcode.com/kalvamanideep", icon: Code2 },
+    { label: "GitHub", url: "https://github.com/manideep8553", icon: Github },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/kalva-manideep19/", icon: Linkedin },
+    { label: "Email", url: "mailto:kalvamanideep@gmail.com", icon: Mail }
   ],
-
   typingWords: [
     "AI Engineer",
-    "Spring Boot Developer",
+    "Java Developer",
     "MERN Stack Developer",
     "Machine Learning Enthusiast",
     "Problem Solver",
@@ -197,7 +195,7 @@ export const resume = {
       ],
       description:
         "An AI-powered personal safety and emergency response platform featuring real-time incident detection, live location tracking, SOS alerts, multimodal AI analysis, predictive risk assessment, emergency contact notifications, and interactive monitoring dashboards.",
-      github: "https://github.com/kalvamanideep/guardianai-pro",
+      github: "https://github.com/manideep8553/Guardian-AI-pro",
       live: "#",
       gradient: "from-purple-600/20 via-violet-600/10 to-cyan-600/20",
       date: "July 2026",
@@ -230,7 +228,7 @@ export const resume = {
       ],
       description:
         "An AI-powered enterprise workflow automation platform enabling dynamic workflow orchestration, role-based access control, document intelligence, fraud detection, real-time analytics, and intelligent business process automation.",
-      github: "https://github.com/kalvamanideep/ai-flow-enterprise",
+      github: "https://github.com/manideep8553/AI-flow-Enterprise-Spring-boot",
       live: "#",
       gradient: "from-cyan-600/20 via-blue-600/10 to-purple-600/20",
       date: "July 2026",
@@ -252,8 +250,9 @@ export const resume = {
       ],
       description:
         "A real-time collaborative study platform featuring video conferencing, live chat, screen sharing, collaborative whiteboards, synchronized Pomodoro timers, AI-powered session summarization, and an integrated Monaco Code Editor.",
-      github: "https://github.com/kalvamanideep/virtual-study-room",
-      live: "#",
+      github: "https://github.com/manideep8553/virtual-study-room",
+      live: "https://virtual-study-room.vercel.app/",
+      
       gradient: "from-pink-600/20 via-purple-600/10 to-indigo-600/20",
       date: "March 2026",
     },
@@ -274,8 +273,8 @@ export const resume = {
       ],
       description:
         "An AI-powered placement preparation platform providing mock interviews, coding assessments, resume analysis, company-specific preparation, skill gap analysis, personalized roadmaps, and placement readiness scoring.",
-      github: "https://github.com/kalvamanideep/ai-interview-coach",
-      live: "#",
+      github: "https://github.com/manideep8553/Ai-placement-guide",
+      live: "https://ai-placement-guide.vercel.app/",
       gradient: "from-sky-600/20 via-blue-600/10 to-violet-600/20",
       date: "June 2026",
     },
@@ -312,7 +311,7 @@ export const resume = {
       label: "70+ Problems",
       icon: Code2,
       color: "#FFA116",
-      link: "https://leetcode.com/kalvamanideep",
+      link: "https://leetcode.com/u/Manideep_06/",
       description: "Solved 70+ problems focusing on algorithmic problem solving and coding interview preparation.",
     },
     {
@@ -323,7 +322,7 @@ export const resume = {
       rating: 1017,
       icon: Trophy,
       color: "#A855F7",
-      link: "https://www.codechef.com/users/kalvamanideep",
+      link: "https://www.codechef.com/users/manideep9320",
       description:
         "Solved 100+ competitive programming problems with a rating of 1017.",
     },
@@ -347,7 +346,7 @@ export const resume = {
     email: "kalvamanideep@gmail.com",
     phone: "+91 9703388336",
     location: "Hyderabad, India",
-    linkedin: "https://linkedin.com/in/kalvamanideep",
-    github: "https://github.com/kalvamanideep",
+    linkedin: "https://www.linkedin.com/in/kalva-manideep19/",
+    github: "https://github.com/manideep8553",
   },
 } as const;
